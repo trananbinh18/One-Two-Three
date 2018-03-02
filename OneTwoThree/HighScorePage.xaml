@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="OneTwoThree.HighScorePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OneTwoThree"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <RelativePanel>
+        <RelativePanel.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Image/BG_Highscorescreen.jpg"/>
+        </RelativePanel.Background>
+        <Button x:Name="btnMusic" Content="" HorizontalAlignment="Right" Height="57" VerticalAlignment="Top" Width="37" Margin="0,0,0,0" Style="{StaticResource SomeButtonStyle}" RenderTransformOrigin="1.324,0.491" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="true" Click="btnMusic_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Image/Music.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnBack" Content="" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="74" Margin="5,0,0,0" Style="{StaticResource ResourceKey=SomeButtonStyle}" RenderTransformOrigin="1.324,0.491" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" Click="btnBack_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Image/IC_Back.png"/>
+            </Button.Background>
+        </Button>
+        <ListView HorizontalAlignment="Left" Height="265" VerticalAlignment="Top" Width="360" Margin="0,255,-360,-520"/>
+        <MediaElement x:Name="MySong" IsLooping="True"/>
+
+
+
+    </RelativePanel>
+</Page>

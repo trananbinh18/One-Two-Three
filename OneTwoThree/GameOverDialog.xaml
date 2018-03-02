@@ -1,0 +1,47 @@
+﻿<ContentDialog
+    x:Class="OneTwoThree.GameOverDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OneTwoThree"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="Transparent" Foreground="Transparent" MinWidth="318" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="0,197,0,0">
+
+    <ContentDialog.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentDialog.Resources>
+    <ContentDialog.BorderBrush>
+        <ImageBrush Stretch="Fill"/>
+    </ContentDialog.BorderBrush>
+
+    <Grid Height="342" RenderTransformOrigin="0.5,0.5" BorderBrush="Transparent">
+        <Grid.Background>
+            <ImageBrush Stretch="None"/>
+        </Grid.Background>
+        <Image x:Name="imgDialog" HorizontalAlignment="Left" Height="197" VerticalAlignment="Top" Width="293" Source="Assets/Image/DialogGameOver.png" Stretch="Fill" Margin="0,58,0,0"/>
+        <Button x:Name="btnHome"  HorizontalAlignment="Left" Margin="37,260,0,0" Style="{StaticResource SomeButtonStyle}" VerticalAlignment="Top" Height="65" Width="75" Click="btnHome_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Image/HomeDialog.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnRestart"  HorizontalAlignment="Left" Margin="180,260,0,0" Style="{StaticResource SomeButtonStyle}" VerticalAlignment="Top" Height="65" Width="75" Click="btnRestart_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Image/RestartDialog.png"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="imgDisplay" HorizontalAlignment="Left" Height="124" Margin="37,98,0,0" VerticalAlignment="Top" Width="218" Source="Assets/Image/TODAYNOTYOURLUCKY.png" Stretch="Fill"/>
+        <StackPanel HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="80" Margin="98,10,0,0" Orientation="Horizontal">
+            <Image x:Name="lblScore1"  HorizontalAlignment="Left" Margin="0"  VerticalAlignment="Top" Height="70" Width="40" Stretch="Fill">
+
+            </Image>
+            <Image x:Name="lblScore2"  HorizontalAlignment="Left" Margin="0"  VerticalAlignment="Top" Height="70" Width="40" Stretch="Fill">
+                
+            </Image>
+            <StackPanel Height="100"/>
+        </StackPanel>
+    </Grid>
+</ContentDialog>

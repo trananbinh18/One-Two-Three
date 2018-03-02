@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="OneTwoThree.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OneTwoThree"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+
+        <RelativePanel Margin="0,4,0,-4">
+            <RelativePanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Image/BG_Mainscreen.jpg"/>
+            </RelativePanel.Background>
+            <Button x:Name="btnMusic" Content="" HorizontalAlignment="Left" Margin="323,0,0,0" VerticalAlignment="Top" Height="57" Width="37" Foreground="Transparent" AutomationProperties.AccessibilityView="Content" CompositeMode="MinBlend" Style="{StaticResource SomeButtonStyle}" RelativePanel.AlignRightWithPanel="true" RelativePanel.AlignTopWithPanel="true" Click="btnMusic_Click">
+                <Button.BorderBrush>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Image/Music.png"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Image/Music.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnHint" Content="" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="100" Width="100" Foreground="Transparent" AutomationProperties.AccessibilityView="Content" CompositeMode="MinBlend" Style="{StaticResource SomeButtonStyle}" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="true" Click="btnHint_Click">
+                <Button.BorderBrush>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Image/light-bulb.png"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Image/light-bulb.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnAboutUs" Content="" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="100" Width="100" Foreground="Transparent" AutomationProperties.AccessibilityView="Content" CompositeMode="MinBlend" Style="{StaticResource SomeButtonStyle}" RelativePanel.AlignRightWithPanel="true" RelativePanel.AlignBottomWithPanel="true" Click="btnAboutUs_Click">
+                <Button.BorderBrush>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Image/question.png"/>
+                </Button.Background>
+            </Button>
+        <Button x:Name="btnHighScore" Content="" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="100" Width="100" Foreground="Transparent" AutomationProperties.AccessibilityView="Content" CompositeMode="MinBlend" Style="{StaticResource SomeButtonStyle}" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Click="btnHighScore_Click">
+                <Button.BorderBrush>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Image/HighScore.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnPlay" Content="" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="120" Width="154" Foreground="Transparent" AutomationProperties.AccessibilityView="Content" CompositeMode="MinBlend" Style="{StaticResource SomeButtonStyle}" RelativePanel.AlignVerticalCenterWithPanel="true" RelativePanel.AlignHorizontalCenterWithPanel="true" Click="btnPlay_Click">
+                <Button.BorderBrush>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Image/PlayButton.png"/>
+                </Button.Background>
+            </Button>
+
+        <MediaElement x:Name="MusicSong" Source="/Assets/Music/Final-Fantasy-IX-Chocobo-theme-Square-Enix.mp3" IsLooping="True" AutoPlay ="False"/>
+
+    </RelativePanel>
+        
+</Page>

@@ -1,0 +1,2 @@
+MainPackage=G:\Users\BinhMoi\documents\visual studio 2017\Projects\OneTwoThree\OneTwoThree\bin\ARM\Debug\OneTwoThree_1.0.0.0_ARM_Debug.appx
+SymbolPackage=G:\Users\BinhMoi\documents\visual studio 2017\Projects\OneTwoThree\OneTwoThree\AppPackages\OneTwoThree_1.0.0.0_Debug_Test\OneTwoThree_1.0.0.0_ARM_Debug.appxsym
